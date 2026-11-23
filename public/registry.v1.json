@@ -1,17 +1,17 @@
 {
  "schema": "incident-registry/v1",
- "data_version": "20261122",
- "as_of": "2026-11-22",
+ "data_version": "20261123",
+ "as_of": "2026-11-23",
  "source": "https://github.com/armanobosyan/incident-registry",
  "licence": "CC BY 4.0",
  "counts": {
-  "cases": 233,
+  "cases": 278,
   "milestones": 10,
   "by_role": {
-   "none": 141,
-   "ai_direct": 35,
-   "ai_around": 25,
-   "ai_found": 32
+   "none": 175,
+   "ai_direct": 39,
+   "ai_around": 31,
+   "ai_found": 33
   }
  },
  "roles": {
@@ -1037,6 +1037,18 @@
    "ai_link": "milestone",
    "evidence": "confirmed",
    "source_url": "https://github.blog/news-insights/product-news/github-copilot-is-generally-available-to-all-developers/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2022-07",
+   "organisation_system": "Samyang Group affiliates (South Korea)",
+   "type": "breach",
+   "what_happened": "An unidentified hacker exploited a vulnerability in Samyang Group's mail server in July 2022 and exposed personal information.",
+   "impact": "About 150,000 people. On 11 Nov 2026 the privacy regulator fined four affiliates a total of 552 million won (about $413,000).",
+   "cause": "A failure to take basic safety measures, per the regulator.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.koreajoongangdaily.com/business/samyang-group-affiliates-fined-over-breach-of-150000-peoples-data/12969217",
    "second_source_url": ""
   },
   {
@@ -2168,6 +2180,18 @@
    "second_source_url": "https://www.tomsguide.com/news/live/verizon-down-jan-14-2026-outage"
   },
   {
+   "date": "2026-01-18",
+   "organisation_system": "Amplifon (USA)",
+   "type": "breach",
+   "what_happened": "An unauthorised party accessed and copied files from company systems between 18 Jan and 8 Feb 2026.",
+   "impact": "1,332,826 people nationwide per third-party summaries of state filings; Amplifon has not confirmed the total. Vermont was notified on 5 Nov 2026 (1,027 residents).",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "reported",
+   "source_url": "https://shattered.io/amplifon-data-breach-1332826-people-social-security-numbers-2026/",
+   "second_source_url": "https://breachtally.com/notice/vt-ag/t-153b38457f0be783dc98"
+  },
+  {
    "date": "2026-01-27",
    "organisation_system": "OpenSSL (all 12 CVEs of the January 2026 release, AISLE)",
    "type": "vulnerability",
@@ -2286,6 +2310,18 @@
    "evidence": "reported",
    "source_url": "https://simonwillison.net/2026/Mar/24/malicious-litellm/",
    "second_source_url": "https://bleepingcomputer.com/news/security/popular-litellm-pypi-package-compromised-in-teampcp-supply-chain-attack"
+  },
+  {
+   "date": "2026-03-26",
+   "organisation_system": "Premise Health (US)",
+   "type": "breach",
+   "what_happened": "An employee misappropriated company data holding personal and health information, starting on or about 26 Mar 2026. The company learned of it on 18 Sep 2026.",
+   "impact": "State filings of 6 Nov 2026 give a partial count of 112,033 people.",
+   "cause": "An insider who broke company information security policies. Premise Health: 'This was not a hacking or ransomware event.'",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.paubox.com/blog/premise-health-discloses-insider-breach-affecting-at-least-112k",
+   "second_source_url": ""
   },
   {
    "date": "2026-03-31",
@@ -2492,6 +2528,18 @@
    "second_source_url": "https://www.techrepublic.com/article/news-dentaquest-data-breach-15-million/"
   },
   {
+   "date": "2026-06",
+   "organisation_system": "CreditNirvana (AI debt collection platform, India)",
+   "type": "vulnerability",
+   "what_happened": "A researcher found flaws that let an attacker bypass authentication on the platform of CreditNirvana, an AI debt collection service owned by Perfios.",
+   "impact": "6.6 million borrower accounts and about 315,000 call recordings were exposed while the flaws were open. Patched in June 2026, disclosed in October, reported by Wired on 18 Nov 2026.",
+   "cause": "Authentication bypass on the primary platform.",
+   "ai_link": "ai_around",
+   "evidence": "reported",
+   "source_url": "https://www.wired.com/story/ai-debt-collection-service-exposed-66-million-accounts-and-315000-call-recordings/",
+   "second_source_url": "https://techbytes.app/posts/an-ai-debt-collection-service-exposed-66-million-accounts-and/"
+  },
+  {
    "date": "2026-06-14",
    "organisation_system": "Squid FTP gateway (CVE-2026-47729)",
    "type": "vulnerability",
@@ -2648,6 +2696,18 @@
    "second_source_url": ""
   },
   {
+   "date": "2026-09",
+   "organisation_system": "Maileva (La Poste subsidiary, France)",
+   "type": "breach",
+   "what_happened": "A cyberattack hit La Poste subsidiary Maileva in mid-September and exposed personal data.",
+   "impact": "First names, last names and postal addresses of 22 million people. La Poste confirmed it to AFP; reported 15 Nov 2026.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://securityaffairs.com/203126/data-breach/data-breach-at-la-poste-subsidiary-maileva-affects-22-million-people-in-france.html",
+   "second_source_url": ""
+  },
+  {
    "date": "2026-09-08",
    "organisation_system": "Universities in East Asia (Cairn AI agents, MONAI Label zero-day)",
    "type": "attack",
@@ -2708,6 +2768,90 @@
    "second_source_url": "https://fortune.com/2026/09/25/north-korea-bitget-387-million-crypto-attack/"
   },
   {
+   "date": "2026-09-28",
+   "organisation_system": "CSC Telecom (Latvian branch)",
+   "type": "breach",
+   "what_happened": "Researchers found a publicly accessible database holding SMS messages sent by banks, airlines and others; it could still be read as new messages were added.",
+   "impact": "More than 125 million SMS messages dated from 20 Oct 2022 to September 2026.",
+   "cause": "An exposed ClickHouse database. The company acknowledged a security vulnerability in one of its systems and said it is fixed.",
+   "ai_link": "none",
+   "evidence": "reported",
+   "source_url": "https://www.escudodigital.com/en/cybersecurity/telecom-data-breach-exposes-more-125-million-sms-messages-europe.html",
+   "second_source_url": "https://www.privacyguides.org/news/2026/11/13/data-breach-roundup-nov-6-12-2026/"
+  },
+  {
+   "date": "2026-10",
+   "organisation_system": "Nitori (Japan)",
+   "type": "breach",
+   "what_happened": "A third party got unauthorised access to a system the furniture retailer manages.",
+   "impact": "Up to 37.62 million records of personal information. The attacker likely had access since mid-October; Nitori confirmed the access on 6 Nov 2026.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-10",
+   "organisation_system": "Iris Ohyama / Iris Plaza (Japan)",
+   "type": "breach",
+   "what_happened": "A third party got unauthorised access to a third-party cloud service the company used.",
+   "impact": "Personal information of about 7.7 million people: up to 5.8 million members and former members and 1.9 million non-members. First notice 29 Oct 2026; the figure was reported 8 Nov 2026.",
+   "cause": "Unauthorised access to a third-party cloud service.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-10",
+   "organisation_system": "Chainalysis",
+   "type": "breach",
+   "what_happened": "Attackers got into the company's systems and internal tools. Chainalysis described the method as 'offensive agentic techniques'.",
+   "impact": "First disclosure: customers' names, email addresses, user IDs and role labels. A later update: names, usernames, password hashes and live tokens of all Chainalysis users were exposed.",
+   "cause": "Attackers using AI tools, in the company's description; the entry point is not stated.",
+   "ai_link": "ai_direct",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-10-02",
+   "organisation_system": "Burger King Japan",
+   "type": "breach",
+   "what_happened": "A third party got unauthorised access to the system that manages app member information between 2 and 7 Oct 2026.",
+   "impact": "A server holding 11.18 million customer records. The company determined it on 13 Oct 2026.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-10-02",
+   "organisation_system": "Wellington IT (IT provider to Irish credit unions)",
+   "type": "breach",
+   "what_happened": "A reported cyberattack on the Belfast IT supplier between 2 and 4 Oct 2026 exposed information of credit union members. The company has not publicly disclosed an incident.",
+   "impact": "About 50 credit unions, 43 of them in Ireland; as many as 1.8 million people could be affected (Irish Times). Reported 17-18 Nov 2026.",
+   "cause": "An automated script made five million requests to exploit an authorisation flaw in the company's infrastructure, as reported.",
+   "ai_link": "none",
+   "evidence": "reported",
+   "source_url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
+   "second_source_url": "https://www.irishtimes.com/your-money/2026/11/17/suspected-data-breach-at-43-credit-unions-could-affect-hundreds-of-thousands-of-members/"
+  },
+  {
+   "date": "2026-10-03",
+   "organisation_system": "Artex AI agent campaigns observed by Amazon",
+   "type": "attack",
+   "what_happened": "Amazon's network of decoy sensors captured requests from AI agents that carried the working memory of offensive campaigns run on Artex, an open-source agentic AI penetration-testing framework.",
+   "impact": "3 Oct to 5 Nov 2026; published 13 Nov 2026. The most prominent campaign was a large-scale theft of credentials to access AI models; another targeted cryptocurrency exchanges to bypass identity checks with real-time deepfake injection. Amazon cannot verify the outcomes the agents reported.",
+   "cause": "AI agents ran the campaigns: planner, worker, verification and compression agents sharing one knowledge graph.",
+   "ai_link": "ai_direct",
+   "evidence": "confirmed",
+   "source_url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/",
+   "second_source_url": ""
+  },
+  {
    "date": "2026-10-07",
    "organisation_system": "Uber via Fireworks AI (third-party AI infrastructure provider)",
    "type": "breach",
@@ -2720,6 +2864,18 @@
    "second_source_url": "https://www.theregister.com/security/2026/11/17/hackers-smash-n-grab-ai-vendor-take-off-with-license-data-of-uber-drivers/5310464"
   },
   {
+   "date": "2026-10-08",
+   "organisation_system": "Fandango (US ticketing)",
+   "type": "breach",
+   "what_happened": "Card skimmer code injected into Fandango's checkout page took payment card details that customers entered from 8 to 11 Oct 2026.",
+   "impact": "The company has not shared the number of customers. It determined the impact on 30 Oct 2026.",
+   "cause": "Malicious code injected into the checkout page.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
+   "second_source_url": ""
+  },
+  {
    "date": "2026-10-14",
    "organisation_system": "Google Chrome (XBOW full-chain exploit built with AI agents)",
    "type": "vulnerability",
@@ -2729,6 +2885,42 @@
    "ai_link": "ai_found",
    "evidence": "confirmed",
    "source_url": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-10-14",
+   "organisation_system": "Qubole customers' AWS accounts",
+   "type": "supply_chain",
+   "what_happened": "A threat actor used IAM credentials from an AWS account associated with Qubole to assume the IAM roles that customers had created to trust Qubole, then collected configuration, secrets and S3 data in victim environments.",
+   "impact": "Multiple Qubole customers; no count given. Activity seen 14 to 26 Oct 2026; published by Wiz on 9 Nov 2026.",
+   "cause": "Abuse of the cross-account access customers grant to a vendor. Qubole had not posted a statement when The Hacker News checked.",
+   "ai_link": "none",
+   "evidence": "reported",
+   "source_url": "https://www.wiz.io/blog/qubole-cross-account-access-abused-in-the-wild",
+   "second_source_url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html"
+  },
+  {
+   "date": "2026-10-18",
+   "organisation_system": "Monex Securities (Japan)",
+   "type": "breach",
+   "what_happened": "A third party got unauthorised access to part of the account opening system that an external contractor runs for the broker.",
+   "impact": "Up to 1.13 million email addresses and 1,592 identity document images. The contractor confirmed an access attempt on 18 Oct; Monex announced it on 13 Nov 2026.",
+   "cause": "Unauthorised access at an external contractor.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://smartscope.blog/en/blog/monex-securities-unauthorized-access-account-opening-system-official-2026/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-10-20",
+   "organisation_system": "Railway (cloud hosting platform)",
+   "type": "breach",
+   "what_happened": "An attacker exploited a previously unknown vulnerability in Railway's build infrastructure, moved across internal systems and decrypted a subset of customer variables. Railway believes the attacker was after AI provider credentials.",
+   "impact": "At most 1.85% (about 100,000) of workspaces; linked-account tokens of 1,852 users; unauthorised spend on the stolen keys estimated at about $740,000. 07:28 UTC 20 Oct to 09:24 UTC 21 Oct 2026; report published 10 Nov 2026.",
+   "cause": "A flaw in the multi-tenant build infrastructure let the attacker read files on the host. Railway, citing Wiz, says it was defending against abliterated models and a harness similar to ARTEX.",
+   "ai_link": "ai_direct",
+   "evidence": "confirmed",
+   "source_url": "https://blog.railway.com/p/incident-report-october-security-incident",
    "second_source_url": ""
   },
   {
@@ -2756,6 +2948,42 @@
    "second_source_url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain"
   },
   {
+   "date": "2026-10-22",
+   "organisation_system": "European Commission",
+   "type": "attack",
+   "what_happened": "The Commission confirmed a cyberattack that its spokesperson described as an 'AI-generated cyber campaign' involving a publicly available AI tool.",
+   "impact": "First signs detected 22 Oct 2026; confirmed 19 Nov 2026. Personnel systems, including payroll, leave requests, medical reimbursements and translation services, were reportedly disrupted for more than 10 days.",
+   "cause": "A publicly available AI tool that the Commission did not name. Politico reported that CERT-EU identified it as ARTEX.",
+   "ai_link": "ai_direct",
+   "evidence": "confirmed",
+   "source_url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-10-23",
+   "organisation_system": "Fireworks AI (AI inference provider)",
+   "type": "breach",
+   "what_happened": "An unauthorised party got into Fireworks development machines hosted at a third-party cloud provider that had its own security incident, and used that access to reach part of the production systems.",
+   "impact": "23 to 30 Oct 2026. Account and billing information for all accounts created before 30 Oct; datasets, models or secrets for a small number of customers. An earlier intrusion ran from 3 Aug to 7 Oct 2026.",
+   "cause": "Access through a third-party cloud provider. Fireworks links the evidence to a financially motivated group that sells stolen access to large language models ('LLMJacking').",
+   "ai_link": "ai_around",
+   "evidence": "confirmed",
+   "source_url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-10-23",
+   "organisation_system": "Notion via Fireworks AI",
+   "type": "breach",
+   "what_happened": "The breach at Fireworks AI, Notion's AI infrastructure provider, exposed Notion AI chat transcripts in a small number of workspaces.",
+   "impact": "Less than 1% of Notion users, per the company. Fireworks alerted Notion on 2 Nov; Notion disclosed it on 11 Nov 2026.",
+   "cause": "The vendor's breach. Fireworks had contractually committed to zero data retention for Notion data, per Notion.",
+   "ai_link": "ai_around",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts",
+   "second_source_url": ""
+  },
+  {
    "date": "2026-10-27",
    "organisation_system": "Chrome, Safari, Android, Windows and Linux (five attack chains from Anthropic's research)",
    "type": "vulnerability",
@@ -2780,6 +3008,78 @@
    "second_source_url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html"
   },
   {
+   "date": "2026-10-29",
+   "organisation_system": "Cursor extension marketplace",
+   "type": "supply_chain",
+   "what_happened": "Attackers distributed malicious versions of Anthropic's Claude Code extension through Cursor's marketplace. The malware installed persistent SSH backdoors.",
+   "impact": "Up to 5,000 developers exposed; the malicious versions were available for about 11 hours. Cursor published its incident report on 13 Nov 2026.",
+   "cause": "The attackers obtained an access key stored on Fireworks AI, per Cursor.",
+   "ai_link": "ai_around",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11",
+   "organisation_system": "Maersk",
+   "type": "attack",
+   "what_happened": "Maersk confirmed that a threat actor breached its systems after the WhiteArmor ransomware group claimed the attack and demanded $5 million. Reported 11 Nov 2026.",
+   "impact": "Maersk: the incident is isolated to a local system and no sensitive data has been disclosed.",
+   "cause": "A ransomware attack claimed by WhiteArmor; the method is not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11",
+   "organisation_system": "SBC Medical Group Holdings (clinics in Japan)",
+   "type": "breach",
+   "what_happened": "Hackers accessed an online platform the company manages and compromised databases holding customer information of clinics in Japan.",
+   "impact": "Over 2 million individuals; the basic information of 1,624,000 people was stolen, per the company's SEC filing as reported on 20 Nov 2026.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-02",
+   "organisation_system": "ARARA email service (SEGA among nearly 380 clients)",
+   "type": "supply_chain",
+   "what_happened": "ARARA disclosed on 2 Nov 2026 a breach of its email distribution service. SEGA said the email addresses of its newsletter subscribers were exposed.",
+   "impact": "77 million email addresses from nearly 380 corporate clients; 2.2 million of them SEGA newsletter subscribers.",
+   "cause": "A web server vulnerability and problems in the system environment, per ARARA; the exact method is under investigation.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-02",
+   "organisation_system": "Mercado Bitcoin (Brazil)",
+   "type": "attack",
+   "what_happened": "A hack drained funds from the crypto exchange's hot wallets.",
+   "impact": "The exchange will absorb a $40 million loss; Chainalysis estimated about $49 million drained across 17 blockchains. Only hot wallets were hit, the exchange said.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://pymnts.com/cryptocurrency/2026/mercado-bitcoin-takes-40-million-dollar-loss-latest-crypto-hack",
+   "second_source_url": "https://bitbo.io/news/mercado-bitcoin-hack-40-million/"
+  },
+  {
+   "date": "2026-11-02",
+   "organisation_system": "Barracuda Email Security Gateway and other products (CVE-2026-116606, CVE-2026-111560)",
+   "type": "vulnerability",
+   "what_happened": "Barracuda published an advisory for a pre-authentication authorisation bypass and a command injection that together could give an attacker root access to the device.",
+   "impact": "Exploitation affecting a small number of organisations, per Barracuda. CISA added both to its exploited list on 10 Nov 2026.",
+   "cause": "Flaws in the product code.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://trust.barracuda.com/security/pre-authentication-authorization-bypass-command-injection",
+   "second_source_url": "https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-162/"
+  },
+  {
    "date": "2026-11-04",
    "organisation_system": "Linux kernel (948 privilege escalation flaws from OpenAI's pipeline)",
    "type": "vulnerability",
@@ -2790,6 +3090,66 @@
    "evidence": "confirmed",
    "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
    "second_source_url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html"
+  },
+  {
+   "date": "2026-11-05",
+   "organisation_system": "NTT Docomo 5G SA network (Japan)",
+   "type": "outage",
+   "what_happened": "5G SA subscribers nationwide had trouble with voice calls, data and SMS three times: from about 11:18 JST on 5 Nov 2026, from 10:34 JST on 11 Nov, and from 10:02 to 15:58 JST on 16 Nov.",
+   "impact": "Nationwide, 5G SA subscribers only; emergency calls were not affected.",
+   "cause": "16 Nov: traffic concentrated on the switching equipment that serves 5G SA customers, per Docomo. The earlier notices give the cause as under investigation, with no sign of unauthorised access or cyberattack.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.docomo.ne.jp/info/network/kanto/pages/261105_13_m.html",
+   "second_source_url": "https://www.docomo.ne.jp/info/network/kanto/pages/261116_07_m.html"
+  },
+  {
+   "date": "2026-11-05",
+   "organisation_system": "OpenSSH (CVE-2026-123158, 'sshole')",
+   "type": "vulnerability",
+   "what_happened": "A flaw let remote attackers log in to passwordless accounts on Alpine Linux and other musl-based systems that do not check passwords through PAM. Fixed in OpenSSH 10.6p2 on 5 Nov 2026.",
+   "impact": "The first attack attempt came less than nine hours after the CVE was published, with root access confirmed on a honeypot (Previdian). CISA added it to its exploited list on 9 Nov 2026.",
+   "cause": "Flaw in the product code. The finder said he worked with swarms of AI agents.",
+   "ai_link": "ai_found",
+   "evidence": "confirmed",
+   "source_url": "https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation",
+   "second_source_url": "https://www.openssh.com/releasenotes.html"
+  },
+  {
+   "date": "2026-11-06",
+   "organisation_system": "Apache Axis 1.x (CVE-2026-90436)",
+   "type": "vulnerability",
+   "what_happened": "A crafted SOAP fault message makes Axis 1.x, which is past end of life, create a class the attacker names.",
+   "impact": "CISA added it to its exploited list on 18 Nov 2026.",
+   "cause": "Unsafe reflection in the product code.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.openwall.com/lists/oss-security/2026/11/06/12",
+   "second_source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+  },
+  {
+   "date": "2026-11-08",
+   "organisation_system": "TSMC (employee data at a cloud provider)",
+   "type": "breach",
+   "what_happened": "A threat actor leaked a sample of TSMC employee data on a hacker forum on 8 Nov 2026 and put the rest up for auction. TSMC confirmed that data of current and former employees was made available without authorisation.",
+   "impact": "The actor claimed 6.9GB with 46,000 employee records. TSMC found no evidence that its own systems were compromised.",
+   "cause": "The leaked data matched data stored at a cloud service provider TSMC uses, per the company.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-09",
+   "organisation_system": "Google Chrome (CVE-2026-125350)",
+   "type": "vulnerability",
+   "what_happened": "Google fixed a use-after-free flaw in Chrome's XML component and said an exploit for it exists in the wild.",
+   "impact": "The eighth Chrome zero-day exploited in attacks in 2026, per BleepingComputer. CISA added it to its exploited list on 10 Nov 2026.",
+   "cause": "Flaw in the product code.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
+   "second_source_url": ""
   },
   {
    "date": "2026-11-10",
@@ -2804,6 +3164,30 @@
    "second_source_url": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-124194"
   },
   {
+   "date": "2026-11-10",
+   "organisation_system": "SAP NetWeaver, Web Dispatcher and Gateway (four CVSS 10.0 flaws)",
+   "type": "vulnerability",
+   "what_happened": "SAP's November 2026 security updates fixed 35 vulnerabilities, four of them rated 10 out of 10: CVE-2026-76964, CVE-2026-89126, CVE-2026-89103 and CVE-2026-120017.",
+   "impact": "Rated 10/10 by SAP; exploitation needs no SAP user, no password and no user interaction.",
+   "cause": "Flaws in the product code, among them memory corruption and missing authentication.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-10",
+   "organisation_system": "Ghostscript (CVE-2026-125396)",
+   "type": "vulnerability",
+   "what_happened": "Ghostscript before 10.08.0 has a bypass of its -dSAFER sandbox that allows arbitrary code execution.",
+   "impact": "Made public on 10 Nov 2026.",
+   "cause": "A procedure calls the privileged .forceput operator without checking operand types.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://explore.alas.aws.amazon.com/CVE-2026-125396.html",
+   "second_source_url": "https://bugzilla.redhat.com/show_bug.cgi?id=2569593"
+  },
+  {
    "date": "2026-11-11",
    "organisation_system": "Linux kernel (59 reports from Microsoft's MDASH)",
    "type": "vulnerability",
@@ -2814,6 +3198,30 @@
    "evidence": "confirmed",
    "source_url": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
    "second_source_url": "https://security-tracker.debian.org/tracker/CVE-2026-74544"
+  },
+  {
+   "date": "2026-11-11",
+   "organisation_system": "GitHub (Actions, Pages, Copilot, webhooks)",
+   "type": "outage",
+   "what_happened": "Actions workflow starts were delayed or failed, webhook requests failed, Pages deployments did not complete and Copilot features were partly unavailable.",
+   "impact": "20:05 to 21:02 UTC on 11 Nov 2026. About 3.4 million partially created Actions runs were cancelled; about 63% of webhook API requests failed in the Central US stamp.",
+   "cause": "An Azure Cosmos DB regional outage: a configuration change to the Central US gateways exposed a latent race condition under a specific high-load traffic pattern.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.githubstatus.com/incidents/dvy0t3mvh1lg",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-11",
+   "organisation_system": "OpenAI (ChatGPT logins and sign-ups)",
+   "type": "outage",
+   "what_happened": "An outage of logins, sign-ups, work mode, dots, sites and spaces, with elevated error rates when creating conversations through the API.",
+   "impact": "20:43 to 20:52 UTC on 11 Nov 2026 (about nine minutes), per the status page.",
+   "cause": "Not stated.",
+   "ai_link": "ai_around",
+   "evidence": "confirmed",
+   "source_url": "https://status.openai.com/incidents/01M765MJQK7F85SC82RMTYN0V3",
+   "second_source_url": "https://status.openai.com/feed.rss"
   },
   {
    "date": "2026-11-12",
@@ -2852,6 +3260,30 @@
    "second_source_url": ""
   },
   {
+   "date": "2026-11-13",
+   "organisation_system": "Anthropic (claude.ai, Claude Code, platform.claude.com)",
+   "type": "outage",
+   "what_happened": "Users could not authenticate to claude.ai and Claude Code; the status page lists elevated errors on claude.ai, Claude Code and platform.claude.com.",
+   "impact": "09:58 to 11:58 UTC on 13 Nov 2026, per the status page.",
+   "cause": "Not stated.",
+   "ai_link": "ai_around",
+   "evidence": "confirmed",
+   "source_url": "https://status.claude.com/history.atom",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-15",
+   "organisation_system": "AWS us-east-1 (sign-in and connectivity)",
+   "type": "outage",
+   "what_happened": "Sign-up errors, authentication issues and connectivity issues in the US-EAST-1 Region. Customers who sign in through IAM Identity Center to the AWS Console or to services such as Kiro and Connect were affected.",
+   "impact": "3:05 AM to 6:10 AM PST on 15 Nov 2026 (about three hours). AWS said there were no workarounds for impacted customers.",
+   "cause": "Not stated in the AWS event log.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://history-events-us-east-1-prod.s3.amazonaws.com/historyevents.json",
+   "second_source_url": "https://dev.to/epifive/aws-us-east-1-outage-nov-15-2026-resolved-what-to-do-now-3e0e"
+  },
+  {
    "date": "2026-11-16",
    "organisation_system": "JPMorgan Chase",
    "type": "outage",
@@ -2888,6 +3320,66 @@
    "second_source_url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/"
   },
   {
+   "date": "2026-11-16",
+   "organisation_system": "United Airlines",
+   "type": "outage",
+   "what_happened": "A system outage forced United to delay departing flights. Pilots told air traffic controllers that the problem was in a system that helps them determine a plane's final weight.",
+   "impact": "More than 90 minutes; resolved about one hour and 40 minutes after pilots first reported problems.",
+   "cause": "Not stated. United said there was no indication of a cybersecurity issue.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.hawaiinewsnow.com/2026/11/16/united-airlines-says-it-has-widespread-system-outage-days-after-nationwide-ground-stop/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-16",
+   "organisation_system": "N-able",
+   "type": "attack",
+   "what_happened": "A cyberattack disrupted N-able services from 16 Nov 2026; the company confirmed on 18 Nov that an attack was behind the disruption.",
+   "impact": "N-able says the incident was isolated to a single web server.",
+   "cause": "A cyberattack; the method is not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/",
+   "second_source_url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/"
+  },
+  {
+   "date": "2026-11-16",
+   "organisation_system": "Transport for London (Oyster photocard accounts)",
+   "type": "breach",
+   "what_happened": "TfL discovered a security incident on 16 Nov 2026 that may have exposed the account details of Oyster photocard customers. Customers had reported emails asking them to create an account; the emails came directly from TfL's mail systems as a result of a compromise.",
+   "impact": "Around 265,000 customers.",
+   "cause": "A compromise of TfL's mail systems; the method is not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-16",
+   "organisation_system": "Infoblox",
+   "type": "supply_chain",
+   "what_happened": "Infoblox confirmed unauthorised access to certain company information through a compromised third-party data migration vendor.",
+   "impact": "The company would not say how many customers were affected.",
+   "cause": "A compromised vendor.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://techcrunch.com/2026/11/16/cyber-giant-infoblox-confirms-security-incident-after-hackers-access-company-information/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-16",
+   "organisation_system": "JPMorgan Chase, Visa and Mastercard (third-party vendors)",
+   "type": "supply_chain",
+   "what_happened": "JPMorgan said third parties that provide services to the firm were the target of a cyberattack; Visa and Mastercard each pointed to an incident at a third-party provider. An extortion group calling itself n0n posted its claims on 16 Nov 2026.",
+   "impact": "Marketing data that may include customer names and email addresses, per JPMorgan. The posted data appears to hold more than 16,000 customer email addresses (Reuters review, not verified). Visa: no payments data such as card numbers were affected.",
+   "cause": "Attacks on service providers; the vendors are not named.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.businessinsurance.com/jpmorgan-visa-mastercard-say-third-party-vendors-targeted-in-cyberattack/",
+   "second_source_url": ""
+  },
+  {
    "date": "2026-11-17",
    "organisation_system": "NSA network (classified communications)",
    "type": "outage",
@@ -2910,6 +3402,42 @@
    "evidence": "confirmed",
    "source_url": "https://cyberscoop.com/java4shell-critical-java-flaw-openjdk/",
    "second_source_url": "https://radar.cloudflare.com/zero-wire/java4shell"
+  },
+  {
+   "date": "2026-11-17",
+   "organisation_system": "Apple (Apple Music, App Store, AppleCare)",
+   "type": "outage",
+   "what_happened": "Apple Music, the App Store and AppleCare suffered full outages, and the iCloud sign-in interface had issues, per Apple's status page.",
+   "impact": "Duration not stated; Apple said the same day that many of its systems were back up.",
+   "cause": "An internal update, per Apple's statement.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://abc7news.com/story/apple-joins-parade-technology-hiccups-recent-days/20048749/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-17",
+   "organisation_system": "Panama power system (Gatun plant, Ensa and Naturgy customers)",
+   "type": "outage",
+   "what_happened": "A trip of unit G2 at the Gatun thermoelectric plant cut power to customers of Ensa and Naturgy in the early hours of 17 Nov 2026.",
+   "impact": "192,238 Ensa customers were without power; over 307,000 customers in all for up to 13 minutes (Rio Times).",
+   "cause": "The loss of about 295 MW of generation when the unit tripped. The sources name no computer fault.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.telemetro.com/nacionales/falla-termoelectrica-provoca-interrupciones-del-servicio-electrico-panama-n6098788",
+   "second_source_url": "https://www.riotimesonline.com/panama-power-cut-307000-customers-november-17/"
+  },
+  {
+   "date": "2026-11-17",
+   "organisation_system": "Apache Roller (CVE-2026-129448)",
+   "type": "vulnerability",
+   "what_happened": "Roller versions 4.0.0 through 6.1.4 deserialise untrusted data, which lets an unauthenticated remote attacker execute arbitrary code.",
+   "impact": "Actively exploited, per Apache. CISA added it to its exploited list on 20 Nov 2026.",
+   "cause": "Flaw in the product code.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://security.apache.org/projects/roller/",
+   "second_source_url": "https://www.openwall.com/lists/oss-security/2026/11/17/5"
   },
   {
    "date": "2026-11-18",
@@ -2958,6 +3486,18 @@
    "evidence": "reported",
    "source_url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
    "second_source_url": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere"
+  },
+  {
+   "date": "2026-11-20",
+   "organisation_system": "Cloudflare (Washington, DC datacenter)",
+   "type": "outage",
+   "what_happened": "Cloudflare's status history lists network performance issues in its Washington, DC datacenter (IAD).",
+   "impact": "20:35 UTC 20 Nov to 07:44 UTC 21 Nov 2026 (about 11 hours), rated minor.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.cloudflarestatus.com/history",
+   "second_source_url": ""
   }
  ]
 }
