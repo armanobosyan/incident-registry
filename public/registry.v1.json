@@ -1,17 +1,17 @@
 {
  "schema": "incident-registry/v1",
- "data_version": "20261123",
- "as_of": "2026-11-23",
+ "data_version": "20261126",
+ "as_of": "2026-11-26",
  "source": "https://github.com/armanobosyan/incident-registry",
  "licence": "CC BY 4.0",
  "counts": {
-  "cases": 278,
+  "cases": 313,
   "milestones": 10,
   "by_role": {
-   "none": 175,
-   "ai_direct": 39,
-   "ai_around": 31,
-   "ai_found": 33
+   "none": 197,
+   "ai_direct": 46,
+   "ai_around": 36,
+   "ai_found": 34
   }
  },
  "roles": {
@@ -2636,6 +2636,18 @@
    "second_source_url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/"
   },
   {
+   "date": "2026-08",
+   "organisation_system": "CL-STA-1238 (Cairn AI agents with Zhipu GLM and DeepSeek models)",
+   "type": "attack",
+   "what_happened": "Unit 42 documented 25 operations against at least 19 organisations between August and September 2026, run with the open-source Cairn framework paired with Zhipu GLM and DeepSeek models. Unit 42: 'The attackers supplied a target and a goal, then Cairn planned, executed and recorded results on its own.' Unit 42 assesses with moderate confidence that this is a China-nexus intelligence collection campaign.",
+   "impact": "Unauthorized access or data retrieval at 10 of the at least 19 organisations.",
+   "cause": "Misuse of the publicly available Cairn penetration-testing framework, which Unit 42 says runs AI-driven agent workers; Unit 42 says the attackers 'weaponized Cairn by pairing it with Chinese AI models Zhipu GLM and DeepSeek.'",
+   "ai_link": "ai_direct",
+   "evidence": "reported",
+   "source_url": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
+   "second_source_url": ""
+  },
+  {
    "date": "2026-08-04",
    "organisation_system": "ChainDrop (npm worm, keyv and related packages)",
    "type": "supply_chain",
@@ -2900,6 +2912,18 @@
    "second_source_url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html"
   },
   {
+   "date": "2026-10-17",
+   "organisation_system": "Check Point Security Management servers (22 organisations)",
+   "type": "attack",
+   "what_happened": "A campaign that GreyNoise tracks as GT13 compromised 24 Check Point Security Management servers at 22 organisations. Confirmed activity ran from October 17 to November 2, 2026, and the actor used one HFS server to pull data from the compromised servers.",
+   "impact": "22 organisations (BleepingComputer: spread across 17 countries); 24 Security Management servers; over 100 management tasks run on the servers; 99 IP addresses used. Data exfiltration from 24 previously compromised servers (THN).",
+   "cause": "Check Point says the attackers used CVE-2026-16232, a SmartConsole authentication bypass it disclosed in July 2026. GreyNoise assesses that the actor ran an AI-powered offensive tool, based on behaviour, automation and custom tooling; AI use is unconfirmed.",
+   "ai_link": "ai_direct",
+   "evidence": "reported",
+   "source_url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
+   "second_source_url": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html"
+  },
+  {
    "date": "2026-10-18",
    "organisation_system": "Monex Securities (Japan)",
    "type": "breach",
@@ -2952,12 +2976,24 @@
    "organisation_system": "European Commission",
    "type": "attack",
    "what_happened": "The Commission confirmed a cyberattack that its spokesperson described as an 'AI-generated cyber campaign' involving a publicly available AI tool.",
-   "impact": "First signs detected 22 Oct 2026; confirmed 19 Nov 2026. Personnel systems, including payroll, leave requests, medical reimbursements and translation services, were reportedly disrupted for more than 10 days.",
+   "impact": "First signs detected 22 Oct 2026; confirmed 19 Nov 2026. Personnel systems, including payroll, leave requests, medical reimbursements and translation services, were reportedly disrupted for more than 10 days. On 23 Nov 2026 the Commission confirmed that the attackers also breached the EU Academy learning platform and leaked the names and email addresses of its users.",
    "cause": "A publicly available AI tool that the Commission did not name. Politico reported that CERT-EU identified it as ARTEX.",
    "ai_link": "ai_direct",
    "evidence": "confirmed",
    "source_url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
-   "second_source_url": ""
+   "second_source_url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/"
+  },
+  {
+   "date": "2026-10-22",
+   "organisation_system": "GlobeTopper (gift card platform of iQSTEL)",
+   "type": "attack",
+   "what_happened": "A cyberattack disrupted GlobeTopper's B2B gift card platform. The parent iQSTEL says the intrusion was detected on October 22, the platform was suspended and taken offline on October 23, and a rebuilt platform went live on AWS on October 31, with commercial operations restored in stages from November 1. Attackers redeemed digital gift cards worth about $70,000 that cannot be recovered. They also obtained some business customers' API credentials and integration keys, which have been revoked and replaced.",
+   "impact": "BleepingComputer reports an estimated $2.5 million in lost revenue. About $70,000 of gift cards redeemed. iQSTEL says the incident hurt fourth-quarter transaction volume but has not determined it to be material.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
+   "second_source_url": "https://www.sec.gov/Archives/edgar/data/0001527702/000166357726000359/iqst8k112026.htm"
   },
   {
    "date": "2026-10-23",
@@ -3092,6 +3128,18 @@
    "second_source_url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html"
   },
   {
+   "date": "2026-11-04",
+   "organisation_system": "Cleverbridge (payments platform for software companies)",
+   "type": "breach",
+   "what_happened": "Cleverbridge detected unauthorized activity on November 4, 2026 and took systems offline; they were brought back the same day. Its investigation found that a third party copied payment card data stored on its platform. Customers began receiving notices on November 20.",
+   "impact": "Number of customers affected was not disclosed. The customer notice (as shown to BleepingComputer) lists card number, expiry date and CVV/CVC; name and billing details were reportedly not copied.",
+   "cause": "Not stated. Cleverbridge has not said how attackers got in or how long they stayed.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+   "second_source_url": "https://grow.cleverbridge.com/incident-update"
+  },
+  {
    "date": "2026-11-05",
    "organisation_system": "NTT Docomo 5G SA network (Japan)",
    "type": "outage",
@@ -3188,6 +3236,18 @@
    "second_source_url": "https://bugzilla.redhat.com/show_bug.cgi?id=2569593"
   },
   {
+   "date": "2026-11-10",
+   "organisation_system": "Xen Orchestra and XOA (CVE-2026-133469)",
+   "type": "vulnerability",
+   "what_happened": "An authentication bypass in Xen Orchestra and XOA lets a remote attacker with network access to the management interface log in without credentials, via a crafted cookie containing an empty JSON object. Vates confirms the flaw is actively exploited by a threat actor. The attacker can list reusable login token IDs through a REST API endpoint; Vates warns this can lead to admin actions, code execution on managed pools and full root takeover of XCP-ng nodes.",
+   "impact": "Not stated numerically. Admin-level control of managed pools and root on XCP-ng nodes are the potential outcomes per Vates.",
+   "cause": "Authentication bypass in cookie processing: a crafted cookie with an empty JSON object makes the platform retrieve an existing token and log the attacker in as its owner. Discovered by Filip Magic and Christoffer Olsen of TDC NET Security (per BleepingComputer).",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers",
+   "second_source_url": "https://docs.vates.tech/security-advisories/advisories/2026/vates-sa-2026-062/"
+  },
+  {
    "date": "2026-11-11",
    "organisation_system": "Linux kernel (59 reports from Microsoft's MDASH)",
    "type": "vulnerability",
@@ -3272,6 +3332,18 @@
    "second_source_url": ""
   },
   {
+   "date": "2026-11-14",
+   "organisation_system": "LaLiga (fan services platform)",
+   "type": "breach",
+   "what_happened": "A cybercriminal accessed one of LaLiga's technology platforms for fan services and extracted personal data of users registered for LaLiga and some clubs' digital services. LaLiga's security team blocked the attacker and stopped the extraction on November 16. LaLiga reported it to the Spanish Data Protection Agency (AEPD) and filed a complaint with the National Police cybercrime unit.",
+   "impact": "Number of users affected was not disclosed. No ransomware group had claimed it at publication. LaLiga did not reply on which clubs were affected.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
+   "second_source_url": "https://www.laliga.com/noticias/laliga-ha-sido-victima-de-un-ciberataque-que-ha-afectado-a-datos-personales-de-aficionados"
+  },
+  {
    "date": "2026-11-15",
    "organisation_system": "AWS us-east-1 (sign-in and connectivity)",
    "type": "outage",
@@ -3282,6 +3354,18 @@
    "evidence": "confirmed",
    "source_url": "https://history-events-us-east-1-prod.s3.amazonaws.com/historyevents.json",
    "second_source_url": "https://dev.to/epifive/aws-us-east-1-outage-nov-15-2026-resolved-what-to-do-now-3e0e"
+  },
+  {
+   "date": "2026-11-15",
+   "organisation_system": "Mitel MiCollab (five zero-days)",
+   "type": "vulnerability",
+   "what_happened": "Accenture found attackers exploiting MiCollab flaws before Mitel's advisory. A web shell was deployed on November 15; commands ran on one MiCollab server 12 minutes after the first request, and root access followed within half an hour. About 20 hours after the first request, the attackers reached internal backup and database servers. Accenture's Apex Labs did not link the activity to a known group and thinks it may have been an extortion effort. Accenture says some of the malicious activity may have been driven by AI tools.",
+   "impact": "One MiCollab server taken to root; internal backup and database servers reached. A second victim's MiCollab server had been in contact with the same attacker infrastructure since November 9; how it was compromised is unknown.",
+   "cause": "Five MiCollab flaws: CVE-2026-133275, CVE-2026-133303, CVE-2026-133311, CVE-2026-133323, CVE-2026-133324 (Mitel: 5.3, 9.0, 5.9, 10.0, 5.3 CVSS 3.1). Mitel patched 10.3 (10.3.0.18) on Nov 16; advisory revision 2.0 Nov 24.",
+   "ai_link": "ai_direct",
+   "evidence": "reported",
+   "source_url": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/",
+   "second_source_url": "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0012"
   },
   {
    "date": "2026-11-16",
@@ -3440,6 +3524,42 @@
    "second_source_url": "https://www.openwall.com/lists/oss-security/2026/11/17/5"
   },
   {
+   "date": "2026-11-17",
+   "organisation_system": "Bell Canada (circuit ordering and provisioning system)",
+   "type": "breach",
+   "what_happened": "Bell confirmed that an agentic threat actor accessed some of its systems on November 17, 2026, including a system used for ordering and provisioning circuits, and took some enterprise customer data. The customer notice says the data is business contact details, ticket titles and some IP addresses, with no credentials.",
+   "impact": "Bell has not disclosed how many enterprise customers were affected or how much data was stolen. Bell says there was no impact to customer services.",
+   "cause": "An attacker Bell calls an 'agentic threat actor'. Bell does not say how it got in.",
+   "ai_link": "ai_direct",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-17",
+   "organisation_system": "Rackspace Spot (managed Kubernetes platform)",
+   "type": "breach",
+   "what_happened": "Attackers used leaked credentials to access parts of the Rackspace Spot platform on November 17, 2026 (about 00:20 to 22:00 UTC). They could create pods in customer clusters, read Kubernetes Secrets, and list nodes and volumes. The admin console was taken down for an extended outage and restored on November 21. On November 24 Rackspace announced it will shut the service down permanently on December 8, 2026.",
+   "impact": "Customers' cluster Secrets (any Secret in an affected cluster), Spot API tokens and refresh tokens may have been read. Number of customers and whether customer data was stolen were not disclosed.",
+   "cause": "Leaked (compromised) credentials, per the Rackspace customer notice.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-17",
+   "organisation_system": "Equinor (IT systems)",
+   "type": "attack",
+   "what_happened": "Equinor detected an ongoing cyber-attack against certain IT systems on November 17. Production was unaffected. On November 19 it said the attack did not appear to be specifically targeting Equinor and it had reported the matter to police. On November 20 it said the attack had been stopped.",
+   "impact": "Production unaffected. Equinor: 'no indication that data has been stolen or altered.' Affected systems not named. No negative consequences for employees, partners or suppliers, per Equinor.",
+   "cause": "Not stated. Equinor's page does not name a vector and does not mention Azure or an API.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://equinor.com/news/20261711-equinor-detected-cyber-attack",
+   "second_source_url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/"
+  },
+  {
    "date": "2026-11-18",
    "organisation_system": "nginx HTTP/2 (CVE-2026-123007 and CVE-2026-123633, nginx2root)",
    "type": "vulnerability",
@@ -3462,6 +3582,18 @@
    "evidence": "confirmed",
    "source_url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
    "second_source_url": "https://verialabs.com/ruby2shell/"
+  },
+  {
+   "date": "2026-11-18",
+   "organisation_system": "Microsoft Azure API Management Classic tiers",
+   "type": "breach",
+   "what_happened": "A flaw in Azure API Management Classic was exploited to steal stored secrets: Named Values, client secrets for identity and OpenID Connect providers, subscription keys and tokens for direct management APIs. Microsoft identified the issue on November 18, deployed a mitigation on November 19 and closed the unauthorized access path. Norway's National Security Authority (NSM) says an unknown threat actor targeted these stored items, and BleepingComputer reports that the flaw has been linked to attacks on Norwegian organisations, including energy companies.",
+   "impact": "Stored secrets exposed to the attacker; Microsoft says it 'does not automatically invalidate credentials that may have been accessed before the fix was deployed.' Consumption tier and all v2 tiers not affected. No customer counts given.",
+   "cause": "Vulnerability in APIM Classic tiers; no CVE id given in the article.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+   "second_source_url": ""
   },
   {
    "date": "2026-11-19",
@@ -3488,6 +3620,42 @@
    "second_source_url": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere"
   },
   {
+   "date": "2026-11-19",
+   "organisation_system": "Radware Cloud WAF (management API)",
+   "type": "breach",
+   "what_happened": "An unauthorized party accessed an internal-only Cloud WAF management API that was reachable from the public internet with no authentication. The attacker could reach customer contact details and, for some customers, the credentials used to export WAF logs to their own storage (AWS S3, Azure Blob Storage or SFTP). Radware blocked the IP, revoked and replaced internal credentials, and detected the access about ten hours after it began.",
+   "impact": "Customer contact details and, for a subset of customers, log-export credentials potentially accessed. Radware says there is no evidence of changes to customer security policies or of access to application traffic, and that WAF protection continued. Customers reported AWS alerts for an unfamiliar IP address accessing their log buckets. Number of customers affected was not disclosed.",
+   "cause": "The internal Cloud WAF management API was exposed to the public internet without authentication (per Radware's root cause analysis).",
+   "ai_link": "none",
+   "evidence": "reported",
+   "source_url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-19",
+   "organisation_system": "Drupal core installer (Fail2Install, CVE-2026-132165)",
+   "type": "vulnerability",
+   "what_happened": "Under specific conditions an attacker could use the Drupal installer to reinstall the site, which can lead to site takeover or remote code execution. Drupal's Security Team received a report that it was exploited on live sites from 2026-11-19 19:00 UTC. CISA added it to KEV on November 24 (per SecurityWeek).",
+   "impact": "SecurityWeek: 'It's unclear how many websites are affected.' Drupal says some but not all exploit paths are mitigated if settings.php cannot be written. Count not given.",
+   "cause": "Installer reinstall condition. Drupal: 'Under specific conditions, an attacker can use the installer to attempt to reinstall Drupal.'",
+   "ai_link": "ai_found",
+   "evidence": "confirmed",
+   "source_url": "https://www.drupal.org/sa-core-2026-017",
+   "second_source_url": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/"
+  },
+  {
+   "date": "2026-11-19",
+   "organisation_system": "1Password (source code and customer account records)",
+   "type": "breach",
+   "what_happened": "An attacker used a compromised employee corporate GitHub account to reach private repositories, pushed malicious code to backend services, and downloaded administrative data about customers. 1Password says customer vaults were not accessed.",
+   "impact": "Account records for a subset of users (names, email addresses, account and user IDs, creation and last sign-in times, public keys, SRP parameters); invitation, provisioning and account-recovery tokens for a small number of users; internal source code copied. No exact count given. 1Password found no internal evidence of customer account takeovers.",
+   "cause": "Compromised employee corporate GitHub account, used to push malicious code to backend services.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+   "second_source_url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/"
+  },
+  {
    "date": "2026-11-20",
    "organisation_system": "Cloudflare (Washington, DC datacenter)",
    "type": "outage",
@@ -3497,6 +3665,258 @@
    "ai_link": "none",
    "evidence": "confirmed",
    "source_url": "https://www.cloudflarestatus.com/history",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-20",
+   "organisation_system": "FBI National Crime Information Center (NCIC)",
+   "type": "breach",
+   "what_happened": "Apparent hackers reportedly breached the NCIC, the nationwide database police use to share warrants, missing-person and background-check information. The FBI has not confirmed it, and it is unclear when the breach happened, how access was gained, or whether data was stolen.",
+   "impact": "Not stated. Unclear whether sensitive records were accessed or whether availability was affected.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "reported",
+   "source_url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+   "second_source_url": "https://www.cnn.com/2026/11/20/politics/fbi-hacked-again-target-crime-database"
+  },
+  {
+   "date": "2026-11-20",
+   "organisation_system": "Microsoft Entra Connect Health",
+   "type": "breach",
+   "what_happened": "Microsoft says attackers exploited a flaw in the Entra Connect Health API to get unauthorized read-only access to tenant-level metadata, including administrator and technical contact email addresses. Microsoft found the flaw on November 9, 2026, fixed it on November 19 and concluded its investigation on November 20.",
+   "impact": "Microsoft has not said how many organisations or tenants were affected. More than a dozen administrators have posted that they received the notice. Exposed: admin and technical contact emails, tenant IDs, display names, domains, license tiers, sync status and an expired certificate. Microsoft says no passwords, hashes, tokens or keys were exposed.",
+   "cause": "A vulnerability in the Entra Connect Health API, first introduced July 23, 2026 (per the Microsoft notice as reported by BleepingComputer).",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-20",
+   "organisation_system": "GL.iNet GoodCloud (routers and KVM devices)",
+   "type": "attack",
+   "what_happened": "An unauthorized party exploited a flaw in GL.iNet's GoodCloud remote management service and installed malware on some routers and KVM devices; some users found backdoors and root reverse shells. GL.iNet blocked the attack path on November 20 and says devices can no longer be newly infected through it. Security firmware removes the known malware.",
+   "impact": "Number of devices and customers affected was not disclosed. Unknown whether data was stolen from devices or whether computers behind infected KVM devices were compromised. RemoteToHome reports that most of nearly 200 routers it checked appeared affected, by this attack or an older backdoor dating to September 2025.",
+   "cause": "Not stated by GL.iNet. RemoteToHome's code analysis says GoodCloud ran commands from cloud messages without checking them; GL.iNet has not confirmed this.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+   "second_source_url": "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/"
+  },
+  {
+   "date": "2026-11-20",
+   "organisation_system": "KEPCO, Korea Electric Power Corporation (billing and procurement systems)",
+   "type": "breach",
+   "what_happened": "A threat actor breached KEPCO's internal network and accessed two systems: the KEPCO ON electricity billing platform and the SRM procurement system. KEPCO confirmed unauthorized access on November 20, blocked external IP addresses and suspended the affected services. A hacker using the alias Noiem claimed the attack on a forum on November 19; BleepingComputer says attribution is unconfirmed.",
+   "impact": "1,520,248 people in total per the company breakdown as transcribed by BleepingComputer: 650,487 KEPCO ON customers (names, ID information, phone numbers, addresses, bank account and card details, billing data); 426,827 company representatives (names, ID information, emails, company addresses); 442,934 KEPCO employees (names, affiliation, employee ID, phone and email).",
+   "cause": "The company says the breach resulted from 'advanced technologies such as AI', with no detail on the initial access method or attack chain.",
+   "ai_link": "ai_direct",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+   "second_source_url": "https://www.kepco.co.kr/home/media/newsroom/pr/boardView.do?boardMngNo=15&boardNo=3197"
+  },
+  {
+   "date": "2026-11-20",
+   "organisation_system": "McDonald's Japan (official app database)",
+   "type": "breach",
+   "what_happened": "Third parties accessed a database holding information on users of McDonald's Japan's official app. The exposed information is product purchase history, IP addresses, mobile device location data and internal customer management IDs. The company says no service disruption or misuse of the app was found.",
+   "impact": "Number of people affected and detection date were not disclosed. The company says names, email addresses, phone numbers, home addresses and credit card information were not included.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
+   "second_source_url": "https://www.mcdonalds.co.jp/company/info/261120a/"
+  },
+  {
+   "date": "2026-11-23",
+   "organisation_system": "Turnitin (customer-facing systems)",
+   "type": "attack",
+   "what_happened": "Turnitin disclosed that it recently identified unauthorized activity involving certain customer-facing systems. It activated its incident response plan, brought in outside cybersecurity specialists and notified law enforcement and regulators. The company says its systems are fully operational and safe to use.",
+   "impact": "Not disclosed. Turnitin has not said whether any data was accessed or stolen, when the activity happened, or how many people were affected. It says the affected systems do not collect government ID credentials or institutional financial information. University of Colorado Boulder said it had no indication its data was exposed.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+   "second_source_url": "https://www.securityweek.com/plagiarism-checker-turnitin-investigating-cyberattack/"
+  },
+  {
+   "date": "2026-11-23",
+   "organisation_system": "OpenRouter (three AI providers removed over leaked prompts and secrets)",
+   "type": "breach",
+   "what_happened": "OpenRouter removed three AI providers after a Dragos study found data from at least three AI providers was exposed. Dragos sent about two million seeded prompts containing canary URLs and credentials, and the seeded prompts were used in attempts to reach Dragos test systems and canary AWS accounts. Some leaked credentials were used in the wild. OpenRouter revoked Zero Data Retention eligibility for 125 endpoints as a precaution.",
+   "impact": "Prompts and secrets (credentials) exposed; ZDR revoked for 125 endpoints; affected users advised to rotate secrets. No user or request count given.",
+   "cause": "Provider-side: OpenRouter says there was no breach of its own systems and places the leak at the provider level. Together AI says OpenRouter had not turned on ZDR for its traffic (its own characterisation). Atlas Cloud withdrew models after a third-party incident.",
+   "ai_link": "ai_around",
+   "evidence": "reported",
+   "source_url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+   "second_source_url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+  },
+  {
+   "date": "2026-11-23",
+   "organisation_system": "Zodia Custody (B2B API)",
+   "type": "breach",
+   "what_happened": "Zodia detected attempts to probe its platform on 23 November, took its B2B API offline as a precaution, and found unauthorised access the next day. Limited client information was accessed. Zodia says there were no unauthorised transactions.",
+   "impact": "Limited client information (publicly available details about client organisations); for a small number of clients and employees, a business contact name and email address. No unauthorised transactions found so far. The B2B API was restored after added security measures.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://decrypt.co/384033/standard-chartereds-zodia-custody-says-hackers-accessed-client-contact-details",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-23",
+   "organisation_system": "Anthropic (multiple Claude models)",
+   "type": "outage",
+   "what_happened": "Requests to several Claude models returned elevated errors. Anthropic identified the cause, deployed a fix, and then resolved the incident.",
+   "impact": "Anthropic rated it major in its status feed. The page lists most current Claude models as affected. No user counts given. Status updates ran from 09:49 to 11:07 UTC.",
+   "cause": "Not described. Anthropic says only that the cause was identified.",
+   "ai_link": "ai_around",
+   "evidence": "confirmed",
+   "source_url": "https://status.claude.com/incidents/yzs0s90d8fm8",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-24",
+   "organisation_system": "CIA open-source intelligence analysis system",
+   "type": "breach",
+   "what_happened": "Unknown attackers reportedly breached an open-source intelligence analysis system at the CIA, according to a source and The New York Times. The NYT reported the attack used the ARTEX AI-powered penetration testing framework and also affected the Office of the Director of National Intelligence and the National Geospatial-Intelligence Agency. The CIA and ODNI did not reply to requests for details. A source says no classified systems or information were involved.",
+   "impact": "Not stated. Sources say no classified data or systems were exposed. Scope of data taken is not known.",
+   "cause": "Reportedly the ARTEX AI-powered penetration testing framework was used (NYT, as relayed by BleepingComputer).",
+   "ai_link": "ai_direct",
+   "evidence": "reported",
+   "source_url": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/",
+   "second_source_url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/"
+  },
+  {
+   "date": "2026-11-24",
+   "organisation_system": "Spotify (logins)",
+   "type": "outage",
+   "what_happened": "Spotify users reported a sudden spike of login problems, and the live blog says Spotify fixed the problem in a little over an hour.",
+   "impact": "Peak of over 15,000 Downdetector reports (user-submitted figure, per Tom's Guide live blog); live blog says about 70% of reports were about getting access to the platform.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "reported",
+   "source_url": "https://www.tomsguide.com/news/live/spotify-outage-november-24-2026",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-24",
+   "organisation_system": "US Treasury FinCEN",
+   "type": "breach",
+   "what_happened": "FinCEN said it is investigating a cybersecurity incident that gave unauthorized access to a limited subset of its systems, and it took some systems offline as a precaution. It granted temporary filing relief to filers affected by the service disruption.",
+   "impact": "Limited subset of FinCEN systems; some FinCEN services may be temporarily unavailable. Filing relief reference FIN-2026-R002. No user counts given.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/",
+   "second_source_url": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html"
+  },
+  {
+   "date": "2026-11-24",
+   "organisation_system": "Anthropic (one Claude model)",
+   "type": "outage",
+   "what_happened": "Requests to one Claude model returned elevated errors. Anthropic deployed a fix and then resolved the incident.",
+   "impact": "Anthropic rated it major in its status feed. Components: claude.ai, Claude API, Claude Code, Claude Cowork. No user counts given. Anthropic gives the impact as 17:09 to 17:27 UTC.",
+   "cause": "Not stated.",
+   "ai_link": "ai_around",
+   "evidence": "confirmed",
+   "source_url": "https://status.claude.com/incidents/fbvlx4wx4zx5",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-25",
+   "organisation_system": "Critical infrastructure in Italy and Switzerland (CSIRT Italia and NCSC warnings)",
+   "type": "attack",
+   "what_happened": "CSIRT Italia (Italy) and the Swiss National Cyber Security Centre (NCSC) warned of automated attacks run by AI agents against critical infrastructure organisations. CSIRT Italia reports large-scale campaigns in which autonomous agents found and exploited flaws and misconfigurations on exposed endpoints; the NCSC reports its first successful AI-assisted attacks. The article names four AI pentest or red-team frameworks linked to recent incidents: ARTEX AI, CyberStrikeAI, DeepSeek Harness - Red Team, and PentAGI.",
+   "impact": "NCSC: 'Various organisations and operators of critical infrastructure across at least two sectors have been affected.' No count of victims given.",
+   "cause": "Not stated.",
+   "ai_link": "ai_direct",
+   "evidence": "reported",
+   "source_url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-25",
+   "organisation_system": "Juniper Session Smart Conductor (CVE-2026-103406)",
+   "type": "vulnerability",
+   "what_happened": "A remotely exploitable OS command injection in AutomatedProvisioner lets an attacker run arbitrary commands as root via a crafted Salt minion ID. Juniper's SIRT received a report of at least one malicious exploitation instance. CISA later added the flaw to KEV and told federal agencies to patch within three days under BOD 26-04.",
+   "impact": "At least one instance of malicious exploitation reported to Juniper SIRT (per SecurityWeek). No victim count given.",
+   "cause": "OS command injection (CVSS 9.8) in the AutomatedProvisioner service of Session Smart Conductor; patched in 7.0.5, 7.1.7 and 7.2.3 (Session Smart Router and Conductor).",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks/",
+   "second_source_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+   "date": "2026-11-25",
+   "organisation_system": "OpenAI (ChatGPT, ChatGPT Work and Codex Cloud)",
+   "type": "outage",
+   "what_happened": "Users of ChatGPT, ChatGPT Work and Codex Cloud threads saw elevated conversation errors until OpenAI applied mitigations and then reported recovery.",
+   "impact": "OpenAI status feed impact: minor. Components: Conversations (ChatGPT), ChatGPT Work, Codex Web. Duration 11:48 to 16:12 UTC (4 h 24 min). OpenAI gave no user counts.",
+   "cause": "Not stated. OpenAI's 13:22 UTC update said the investigation into the underlying cause remained ongoing.",
+   "ai_link": "ai_around",
+   "evidence": "confirmed",
+   "source_url": "https://status.openai.com/incidents/01M898HVZGXFV2XC4775CG9GF8",
+   "second_source_url": "https://www.host-tracker.com/en/is-codex-down/incidents/2026-11-25-1148"
+  },
+  {
+   "date": "2026-11-25",
+   "organisation_system": "Microsoft Windows (NTLM sign-in after the November updates)",
+   "type": "outage",
+   "what_happened": "Microsoft confirmed that Windows November 2026 security updates can cause authentication failures for some third-party apps and devices that use NTLM, mainly authentication proxies and SSO products. No fix was available at the time of reporting.",
+   "impact": "Not quantified in the article. Affected: third-party apps and devices using NTLM, including authentication proxy servers, SSO solutions and application packaging solutions.",
+   "cause": "Microsoft says the cause is a proxy device that does not correctly implement NTLM, for example one that sets NTLMSSP_NEGOTIATE_TARGET_INFO but sends an empty or incomplete TargetInfo field. The updates are the first phase of NTLM message-signing improvements.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-25",
+   "organisation_system": "GitHub (Git operations, API, Actions and other services)",
+   "type": "outage",
+   "what_happened": "GitHub reported degraded performance and degraded availability across several products after increased failures caused by high database load. GitHub mitigated it by redistributing database load.",
+   "impact": "Degraded availability for Git Operations and degraded performance for Actions, Packages, Pull Requests and Webhooks (per status page). GitHub rated it critical in its status feed. No user counts given. From 15:55 to 16:52 UTC.",
+   "cause": "High database load: 'We are investigating increased failures due to high database load.' Root cause analysis not yet published.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.githubstatus.com/incidents/qn8mfv6q5hlx",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-25",
+   "organisation_system": "GitHub Copilot (code completions)",
+   "type": "outage",
+   "what_happened": "Code Completions and Next Edit Suggestions in GitHub Copilot had issues; GitHub applied a mitigation and reported recovery.",
+   "impact": "Affected service: Code Completions and Next Edit Suggestions. GitHub rated it critical in its status feed. No user counts given. From 00:08 to 01:15 UTC.",
+   "cause": "Not stated. GitHub says a detailed root cause analysis will be shared later.",
+   "ai_link": "ai_around",
+   "evidence": "confirmed",
+   "source_url": "https://www.githubstatus.com/incidents/m0wx9qml7yjh",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-26",
+   "organisation_system": "FIFA",
+   "type": "breach",
+   "what_happened": "FIFA said it was the victim of a cyberattack in which hackers gained access to a limited set of personal and business information. It did not say when the attack happened or what exactly was taken. FIFA says it is working with law enforcement. Days earlier, a group calling itself the Handsome Boy Hacking Club posted a screenshot it said showed FIFA files and later appeared to claim the hack.",
+   "impact": "Not stated beyond 'a limited set of personal and business information'. A post the article mentions claims more than 12 GB of internal documents leaked; this is not confirmed.",
+   "cause": "Not stated.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/",
+   "second_source_url": ""
+  },
+  {
+   "date": "2026-11-26",
+   "organisation_system": "Cloudflare (dashboard and API)",
+   "type": "outage",
+   "what_happened": "Cloudflare Dashboard and related APIs had issues: requests could fail and errors could be displayed. Cloudflare applied a fix and monitored the results before resolving.",
+   "impact": "Dashboard and API affected; Cloudflare rated it major in its status feed. No user counts given. From 16:03 to 18:17 UTC.",
+   "cause": "Not stated on the status page.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.cloudflarestatus.com/incidents/xiqj67vl5pqm",
    "second_source_url": ""
   }
  ]
