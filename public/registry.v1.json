@@ -1,14 +1,14 @@
 {
  "schema": "incident-registry/v1",
- "data_version": "20261126",
- "as_of": "2026-11-26",
+ "data_version": "20261127",
+ "as_of": "2026-11-27",
  "source": "https://github.com/armanobosyan/incident-registry",
  "licence": "CC BY 4.0",
  "counts": {
-  "cases": 313,
+  "cases": 316,
   "milestones": 10,
   "by_role": {
-   "none": 197,
+   "none": 200,
    "ai_direct": 46,
    "ai_around": 36,
    "ai_found": 34
@@ -3728,6 +3728,18 @@
    "second_source_url": "https://www.mcdonalds.co.jp/company/info/261120a/"
   },
   {
+   "date": "2026-11-20",
+   "organisation_system": "US Department of Agriculture (farm loan, payment and mapping systems)",
+   "type": "attack",
+   "what_happened": "USDA's Cybersecurity and Privacy Operations Center detected a security incident, and on 16 November staff were told to reset database passwords across all environments, which meant restarting the applications. Farm Service Agency loan software, the Natural Resources Conservation Service ProTracts payment system and mapping software went offline for several days. On 20 November Under Secretary Richard Fordyce confirmed it was a cyber threat, not a software update, and said no personally identifiable information was involved and no data was lost. NBC News, citing two former department officials, reported that hackers had accessed the system used to pay farmers; USDA has not confirmed this.",
+   "impact": "Multi-day outages of farmer-facing loan, payment and mapping applications ahead of the 11 December enrollment deadline for the 2026 ARC and PLC programs. USDA says no data was lost.",
+   "cause": "Not stated: USDA has not said who was behind the intrusion or how it happened.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://www.nextgov.com/cybersecurity/2026/11/usda-grapples-security-breach-it-staff-take-multiple-systems-offline/417350/",
+   "second_source_url": "https://hackread.com/usda-cyber-incident-disrupts-farmer-payments/"
+  },
+  {
    "date": "2026-11-23",
    "organisation_system": "Turnitin (customer-facing systems)",
    "type": "attack",
@@ -3918,6 +3930,30 @@
    "evidence": "confirmed",
    "source_url": "https://www.cloudflarestatus.com/incidents/xiqj67vl5pqm",
    "second_source_url": ""
+  },
+  {
+   "date": "2026-11-26",
+   "organisation_system": "SAP (source code on GitHub)",
+   "type": "breach",
+   "what_happened": "SAP confirmed it had identified suspicious activity and taken measures to protect its customers, and said its investigation had so far found no evidence of unauthorised access to customer business data. Der Spiegel, citing an insider, reported that attackers stole SAP employees' authentication tokens and used them to copy and alter SAP source code on GitHub; SAP has not confirmed the token theft or the code changes. Handelsblatt reported that SAP restricted access to GitHub, paused automated development workflows and replaced signing keys.",
+   "impact": "Not stated by SAP beyond no evidence so far of access to customer business data. Per the insider account, SAP source code on GitHub was copied and altered. SAP has not said whether any software release delivered to customers was affected.",
+   "cause": "Stolen employee authentication tokens, according to an insider quoted by Der Spiegel. Der Spiegel also reported that the attackers may have used AI agents; SAP's statement did not address this.",
+   "ai_link": "none",
+   "evidence": "confirmed",
+   "source_url": "https://thenextweb.com/news/sap-security-incident-github-breach",
+   "second_source_url": "https://cyberinsider.com/sap-github-security-incident/"
+  },
+  {
+   "date": "2026-11-27",
+   "organisation_system": "US Air Force Cloud One (cloud computing platform)",
+   "type": "breach",
+   "what_happened": "Hackers breached the Air Force's flagship cloud computing platform, three people familiar with the matter told Reuters; a US official confirmed the hack to NBC News. The intrusion was discovered within the past month or so during work to upgrade the system. One source said the intruders exploited a software vulnerability to reach the control plane. Investigators called in Cyber Command. The Air Force said it does not comment on the security posture of specific networks and systems.",
+   "impact": "Not known: Reuters could not establish the full scope of the intrusion or whether any data was stolen. Migration of back-office applications to Cloud One was paused, updates to applications already on it were blocked, and some users had their administrator rights revoked.",
+   "cause": "A software vulnerability used to reach the control plane, according to one source; Reuters could not identify it.",
+   "ai_link": "none",
+   "evidence": "reported",
+   "source_url": "https://www.cnbc.com/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform.html",
+   "second_source_url": "https://www.nbcnews.com/news/us-news/hackers-attack-penetrate-air-forces-computing-platform-rcna611559"
   }
  ]
 }
